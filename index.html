@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+    body{
+       background-color: hsl(212.31deg 44.83% 88.63%);
+         overflow-y: hidden; /* Hide vertical scrollbar */
+          overflow-x: hidden;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      position: sticky;
+      bottom: 12px;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Outfit", sans-serif;
+
+    }
+
+    .b{
+      
+      /* height: 100%; */
+      /* width: 100%; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      height: 510px;
+      width: 340px;
+      background-color: hsl(0deg 0% 99.61%);
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      border-radius: 25px;
+      box-shadow: 0 9px 13px #c1c1c1;
+    }
+
+    .qrcode {
+      width: 88%;
+      height: 300px;
+      background-color: aliceblue;
+      background-image: url("images/image-qr-code.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 12px;
+    }
+    .te{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+    }
+    .text1{
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.3rem;
+    }
+    .text2{
+      font-weight: 400;
+      font-size: 1.2rem;
+      color: hsl(216, 15%, 48%);
+    }
+    .text2, .text1{
+      text-align: center;
+      margin:12px 17px ;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="b">
+
+    <div class="card">
+      <div class="qrcode"></div>
+      <div class="te">
+        
+        <p class="text1">
+          Improve your front-end skills by building projects
+        </p>
+        <p class="text2">
+          Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Arkham</a>.
+  </div>
+</body>
+
+</html>
